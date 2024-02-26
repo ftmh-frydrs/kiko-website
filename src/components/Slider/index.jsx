@@ -38,12 +38,12 @@ const Slider = ({ slides }) => {
         <SwiperSlide key={index}>
           <img src={slide.image} alt={`Slide ${index + 1}`} />
           <span
-      className={`slide-text ${
-        activeSlide === index ? "active" : ""
-      } ${slide.className}`}
-    >
-      {slide.text}
-    </span>
+            className={`slide-text ${activeSlide === index ? "active" : ""} ${
+              slide.className
+            }`}
+          >
+            {slide.text}
+          </span>
         </SwiperSlide>
       ))}
     </Swiper>
