@@ -1,5 +1,6 @@
 import Icon from "../Icon";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -12,21 +13,49 @@ const Navbar = () => {
         </div>
         <div className="nav-logo">KIKO</div>
         <div className="nav-div-icon">
-          <Icon className="nav-icon" type="map" color="#FFFF" size={24} />
-          <Icon className="nav-icon" type="heart" color="#FFFF" size={24} />
-          <Icon className="nav-icon" type="user" color="#FFFF" size={24} />
-          <Icon className="nav-icon" type="bag" color="#FFFF" size={24} />
+          <Icon className="nav-icon" type="map" color="#FFFF" size={28} />
+          <Icon className="nav-icon" type="heart" color="#FFFF" size={28} />
+          <Icon className="nav-icon" type="user" color="#FFFF" size={28} />
+          <Icon className="nav-icon" type="bag" color="#FFFF" size={28} />
         </div>
       </div>
       <div>
         <ul className="nav-ul">
-          <li>Make-Up</li>
-          <li>Hautpflege</li>
-          <li>Accessoires</li>
-          <li>Neuigkeiten</li>
-          <li>Angebote</li>
-          <li>Dienstleistungen</li>
-          <li>Bestsellerc</li>
+          <li>
+            <Link to="/makeUp" className="menu">
+              Make-Up
+            </Link>
+          </li>
+          <li>
+            <Link to="/hautpflege" className="menu">
+              Hautpflege
+            </Link>
+          </li>
+          <li>
+            <Link to="/accessoires" className="menu">
+              Accessoires
+            </Link>
+          </li>
+          <li>
+            <Link to="/neuigkeiten" className="menu">
+              Neuigkeiten
+            </Link>
+          </li>
+          <li>
+            <Link to="/angebote" className="menu">
+              Angebote
+            </Link>
+          </li>
+          <li>
+            <Link to="/dienstleistungen" className="menu">
+              Dienstleistungen
+            </Link>
+          </li>
+          <li>
+            <Link to="/bestsellerc" className="menu">
+              Bestsellerc
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
